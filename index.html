@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	
+	<meta charset="UTF-8">
+	
+	<!-- disable zooming on mobile (pinch zoom + double tap) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	
+	<title> MPIT Login Page </title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+	<link rel="shortcut icon" href="/assets/images/favicon.jpg" type="image/x-icon">
+	
+	<link rel="stylesheet" href="/css/Stylesheets/style.css">
+	
+</head>
+
+<body oncontextmenu="return false;" onload="window.scrollTo(0,0)">
+
+	<video autoplay muted loop playsinline id="bg-video">
+
+		<source src="/assets/videos/bg-0.mp4" type="video/mp4">
+
+        Your browser does not support the video tag.
+
+    </video>
+
+	<div class="container">
+
+		<form id="loginForm">
+
+			<label class="font" for="username">Username</label>
+			<input type="text" id="username" name="uname">
+
+			<br>
+
+			<label class="font" for="password">Password</label>
+			<input type="password" id="password" name="password">
+
+			<br>
+
+			<div class="show-password">
+
+				<input type="checkbox" id="showPassword">
+				<label for="showPassword">Show Password</label>
+
+			</div>
+
+			<div class="button-group">
+
+				<button type="button" class="cancel-btn">Cancel</button>
+				<button type="submit" class="login-btn">Login</button>
+
+			</div>
+
+		</form>
+
+	</div>
+
+	<script>
+
+		const showPasswordCheckbox = document.getElementById('showPassword');
+		const passwordInput = document.getElementById('password');
+
+		showPasswordCheckbox.addEventListener('change', function() {
+			if (this.checked) {
+				passwordInput.type = 'text';
+			} else {
+				passwordInput.type = 'password';
+			}
+		});
+
+		// Disable text selection
+		document.addEventListener('selectstart', function (e) {
+			e.preventDefault();
+		});
+
+		// Disable copy
+		document.addEventListener('copy', function (e) {
+			e.preventDefault();
+		});
+
+		// Disable cut
+		document.addEventListener('cut', function (e) {
+			e.preventDefault();
+		});
+
+		// Disable paste
+		document.addEventListener('paste', function (e) {
+			e.preventDefault();
+		});
+
+		const loginForm = document.getElementById('loginForm');
+
+		loginForm.addEventListener('submit', function (e) {
+			e.preventDefault();
+
+			const username = document.getElementById('username').value;
+			const password = document.getElementById('password').value;
+
+			if (username === 'amancodex148' && password === 'aman@123') {
+				window.location.href = '/pages/Website pages/home.html';
+			} else {
+				alert('Invalid username or password!');
+			}
+		});
+
+	</script>
+	
+</body>
+
+</html>

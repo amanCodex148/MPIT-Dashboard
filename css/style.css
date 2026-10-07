@@ -1,0 +1,172 @@
+#bg-video 
+{
+	
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    width: 110vw;
+    height: 110vh;
+    transform: translate(-50%, -50%) scale(1.1);
+
+    object-fit: cover;
+    z-index: 0;
+    pointer-events: none;
+
+    filter: blur(12px);
+	
+}
+
+body
+{
+	
+	font-family: "montserrat", sans-serif;
+	
+}
+
+.container
+{
+	
+	width: 30%;
+	min-height: 60vh;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 1rem;
+
+	margin: 0 auto;
+	margin-top: 175px;
+	
+	position: relative;
+    z-index: 2;
+	
+	background-color: rgba(0, 0, 0, 0.65);
+	
+}
+
+.font
+{
+	
+	display: block;
+	text-align: center;
+	color: #f74f4f;
+    font-size: clamp(15px, 6vw, 25px);
+    text-shadow: 0 2px 8px #ff0000;
+	
+}
+
+input[type="text"], input[type="password"] 
+{
+
+    display: block;
+    width: 250px;
+    height: 35px;
+    box-sizing: border-box;
+    margin: 10px auto;
+
+    padding: 8px 12px;
+    font-size: 16px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+
+}
+
+input[type="text"]:focus, input[type="password"]:focus 
+{
+
+    border-color: #ff4f4f;
+    box-shadow: 0 0 6px rgba(255, 79, 79, 0.5);
+
+}
+
+.show-password 
+{
+
+    width: 250px;
+    margin: 5px auto 15px;
+    display: block;
+	text-align: center;
+	gap: 8px;
+
+}
+
+.show-password input 
+{
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    cursor: pointer;
+    accent-color: #ff4f4f;
+
+}
+
+.show-password label 
+{
+
+    font-size: 14px;
+    color: #ff4f4f;
+    cursor: pointer;
+
+}
+
+.button-group 
+{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 20px auto;
+
+}
+
+.button-group button 
+{
+
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+
+}
+
+.login-btn 
+{
+
+    background-color: #f0f0f0;
+    color: #ff4f4f;
+    box-shadow: 0 2px 8px rgba(255, 0, 0, 0.15);
+
+}
+
+.login-btn:hover 
+{
+
+    background-color: #ff4f4f;
+    color: white;
+    box-shadow: 0 2px 12px rgba(255, 0, 0, 0.5);
+
+}
+
+.cancel-btn 
+{
+
+    background-color: #ff4f4f;
+    color: white;
+
+}
+
+.cancel-btn:hover 
+{
+
+    background-color: #d93636;
+    box-shadow: 0 2px 8px rgba(255, 0, 0, 0.3);
+	
+}
