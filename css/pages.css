@@ -1,0 +1,611 @@
+/* =========================================================
+                        MPIT HEADER
+   ========================================================= */
+
+#navBar 
+{
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    background-color: #ffffff;
+
+    border-top: 4px solid orangered;
+    border-bottom: 3px solid #e5e500;
+
+    box-sizing: border-box;
+
+}
+
+/* Main header container */
+
+.header 
+{
+
+    position: relative;
+
+    width: 100%;
+    height: 180px;
+
+    margin: 0;
+    padding: 5px 15px;
+
+    box-sizing: border-box;
+
+}
+
+
+/* =========================================================
+                        LEFT - MPIT LOGO
+   ========================================================= */
+
+.header-logo 
+{
+
+    position: absolute;
+
+    left: 15px;
+    top: 50%;
+
+    width: 125px;
+
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header-logo img 
+{
+
+    display: block;
+
+    width: 125px;
+    height: auto;
+
+    object-fit: contain;
+
+}
+
+
+/* =========================================================
+                CENTER - INSTITUTE INFORMATION
+   ========================================================= */
+
+.header-info 
+{
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 70%;
+    max-width: 900px;
+
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+
+    box-sizing: border-box;
+
+}
+
+
+/* Remove browser default spacing */
+
+.header-info h1,
+.header-info h2,
+.header-info h3,
+.header-info p 
+{
+
+    margin: 2px 0;
+    padding: 0;
+
+    line-height: 1.15;
+
+}
+
+
+/* Main English heading */
+
+.header-info h1 
+{
+
+    color: orangered;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 29px;
+    font-weight: bold;
+
+    white-space: nowrap;
+
+}
+
+
+/* English address */
+
+.header-info h2.font 
+{
+
+    color: orangered;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    white-space: nowrap;
+
+}
+
+
+/* Hindi heading */
+
+.header-info .hindi 
+{
+
+    color: #0755a5;
+
+    font-family: "Noto Sans Devanagari", "Mangal", sans-serif;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    white-space: nowrap;
+
+}
+
+
+/* Hindi address */
+
+.header-info .hindi-address 
+{
+
+    color: #0755a5;
+
+    font-family: "Noto Sans Devanagari", "Mangal", sans-serif;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    white-space: nowrap;
+
+}
+
+
+/* Umbrella text */
+
+.header-info h3 
+{
+
+    color: orangered;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    white-space: nowrap;
+
+}
+
+
+/* Approval + Affiliation */
+
+.header-info p 
+{
+
+    color: #111111;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    white-space: nowrap;
+
+}
+
+
+/* =========================================================
+                RIGHT - GROUPED THREE-PERSON PNG
+   ========================================================= */
+
+.header-photos 
+{
+
+    position: absolute;
+
+    right: 15px;
+    top: 50%;
+
+    width: 330px;
+
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header-photos img 
+{
+
+    display: block;
+
+    width: 330px;
+    height: auto;
+
+    object-fit: contain;
+
+}
+
+
+/* =========================================================
+                    DESKTOP LARGE SCREENS
+   ========================================================= */
+
+@media (min-width: 1200px) 
+{
+
+    .header 
+    {
+
+        height: 185px;
+
+    }
+
+    .header-logo,
+    .header-logo img 
+    {
+
+        width: 135px;
+
+    }
+
+    .header-photos,
+    .header-photos img 
+    {
+
+        width: 345px;
+
+    }
+
+    .header-info 
+    {
+
+        width: 68%;
+
+    }
+
+    .header-info h1 
+    {
+
+        font-size: 30px;
+
+    }
+
+    .header-info h2.font 
+    {
+
+        font-size: 16px;
+
+    }
+
+    .header-info .hindi 
+    {
+
+        font-size: 25px;
+
+    }
+
+    .header-info .hindi-address 
+    {
+
+        font-size: 14px;
+
+    }
+
+}
+
+
+/* =========================================================
+   LAPTOP / MEDIUM SCREENS
+   ========================================================= */
+
+@media (max-width: 1199px) and (min-width: 801px) 
+{
+
+    .header 
+    {
+
+        height: 170px;
+
+    }
+
+    .header-logo,
+    .header-logo img 
+    {
+
+        width: 115px;
+
+    }
+
+    .header-photos,
+    .header-photos img 
+    {
+
+        width: 290px;
+
+    }
+
+    .header-info 
+    {
+        width: 68%;
+
+    }
+
+    .header-info h1 
+    {
+
+        font-size: 24px;
+
+    }
+
+    .header-info h2.font 
+    {
+
+        font-size: 13px;
+
+    }
+
+    .header-info .hindi 
+    {
+
+        font-size: 20px;
+
+    }
+
+    .header-info .hindi-address 
+    {
+
+        font-size: 11px;
+
+    }
+
+    .header-info h3 
+    {
+
+        font-size: 10px;
+
+    }
+
+    .header-info p 
+    {
+
+        font-size: 11px;
+
+    }
+
+}
+
+
+/* =========================================================
+                            MOBILE
+   ========================================================= */
+
+@media (max-width: 800px) 
+{
+
+    .header 
+    {
+
+        height: auto;
+
+        min-height: 310px;
+
+        padding: 10px;
+
+    }
+
+    /* Logo */
+
+    .header-logo 
+    {
+
+        position: relative;
+
+        left: auto;
+        top: auto;
+
+        transform: none;
+
+        width: 100%;
+
+        margin-bottom: 5px;
+
+    }
+
+    .header-logo img 
+    {
+
+        width: 95px;
+
+    }
+
+
+    /* Center text */
+
+    .header-info 
+    {
+
+        position: relative;
+
+        left: auto;
+        top: auto;
+
+        transform: none;
+
+        width: 100%;
+        max-width: 100%;
+
+        margin: 5px auto;
+
+        text-align: center;
+
+    }
+
+    .header-info h1,
+    .header-info h2,
+    .header-info h3,
+    .header-info p 
+    {
+
+        white-space: normal;
+
+    }
+
+    .header-info h1 
+    {
+        
+        font-size: 20px;
+
+    }
+
+    .header-info h2.font 
+    {
+
+        font-size: 12px;
+
+    }
+
+    .header-info .hindi {
+        font-size: 18px;
+    }
+
+    .header-info .hindi-address 
+    {
+
+        font-size: 11px;
+
+    }
+
+    .header-info h3 
+    {
+
+        font-size: 10px;
+
+    }
+
+    .header-info p 
+    {
+
+        font-size: 10px;
+
+    }
+
+
+    /* Grouped image */
+
+    .header-photos 
+    {
+
+        position: relative;
+
+        right: auto;
+        top: auto;
+
+        transform: none;
+
+        width: 250px;
+
+        margin: 8px auto 0;
+
+    }
+
+    .header-photos img 
+    {
+
+        width: 250px;
+        height: auto;
+
+    }
+}
+
+
+/* =========================================================
+                        VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 450px) 
+{
+
+    .header 
+    {
+
+        min-height: 280px;
+
+    }
+
+    .header-logo img 
+    {
+
+        width: 80px;
+
+    }
+
+    .header-info h1 
+    {
+
+        font-size: 17px;
+
+    }
+
+    .header-info h2.font 
+    {
+
+        font-size: 10px;
+
+    }
+
+    .header-info .hindi 
+    {
+
+        font-size: 15px;
+
+    }
+
+    .header-info .hindi-address 
+    {
+
+        font-size: 9px;
+
+    }
+
+    .header-info h3,
+    .header-info p 
+    {
+
+        font-size: 8px;
+
+    }
+
+    .header-photos,
+    .header-photos img 
+    {
+
+        width: 210px;
+
+    }
+    
+}
