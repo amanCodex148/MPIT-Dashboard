@@ -1,3 +1,47 @@
+/* ================= BODY ================= */
+
+html, body 
+{
+
+    overflow-x: hidden; /* prevent horizontal scroll */
+    overflow-y: auto;
+    font-family: "montserrat", sans-serif;
+
+}
+
+/* ================= Mobile Scroll Padding ================= */
+
+@media (max-width: 767px) 
+{
+
+    html 
+    {
+
+        scroll-padding-top: 85px; /* navbar height */
+
+    }
+}
+
+/* ================= Hide scrollbars ================= */
+
+/* Chrome, Edge, Safari */
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Firefox */
+html, body {
+    scrollbar-width: none;
+}
+
+/* IE & old Edge */
+html, body {
+    -ms-overflow-style: none;
+}
+
+
 /* =========================================================
                         MPIT HEADER
    ========================================================= */
@@ -320,7 +364,7 @@
 
 
 /* =========================================================
-   LAPTOP / MEDIUM SCREENS
+                    LAPTOP / MEDIUM SCREENS
    ========================================================= */
 
 @media (max-width: 1199px) and (min-width: 801px) 
@@ -411,9 +455,7 @@
     {
 
         height: auto;
-
-        min-height: 310px;
-
+        min-height: 0;
         padding: 10px;
 
     }
@@ -424,42 +466,37 @@
     {
 
         position: relative;
-
         left: auto;
         top: auto;
-
         transform: none;
 
         width: 100%;
-
-        margin-bottom: 5px;
+        margin-bottom: 8px;
 
     }
 
     .header-logo img 
     {
 
-        width: 95px;
+        width: 85px;
 
     }
 
-
-    /* Center text */
+    /* Institute information */
 
     .header-info 
     {
 
         position: relative;
-
         left: auto;
         top: auto;
-
         transform: none;
 
         width: 100%;
         max-width: 100%;
 
-        margin: 5px auto;
+        margin: 0 auto;
+        padding: 0 5px;
 
         text-align: center;
 
@@ -472,74 +509,104 @@
     {
 
         white-space: normal;
+        overflow-wrap: break-word;
+        word-break: normal;
 
     }
+
+    /* Institute name */
 
     .header-info h1 
     {
-        
-        font-size: 20px;
+
+        font-size: clamp(17px, 5vw, 22px);
+        line-height: 1.2;
+        margin: 3px 0 6px;
 
     }
+
+    /* Address */
 
     .header-info h2.font 
     {
 
-        font-size: 12px;
+        width: 100%;
+        font-size: clamp(10px, 3.2vw, 14px);
+        line-height: 1.35;
+
+        white-space: normal;
+        overflow-wrap: break-word;
+        word-break: normal;
 
     }
 
-    .header-info .hindi {
-        font-size: 18px;
+    /* Hindi heading */
+
+    .header-info .hindi 
+    {
+
+        font-size: clamp(15px, 4.5vw, 20px);
+        line-height: 1.3;
+        white-space: normal;
+
     }
+
+    /* Hindi address */
 
     .header-info .hindi-address 
     {
 
-        font-size: 11px;
+        font-size: clamp(9px, 2.8vw, 13px);
+        line-height: 1.35;
+        white-space: normal;
 
     }
+
+    /* Umbrella text */
 
     .header-info h3 
     {
 
-        font-size: 10px;
+        font-size: clamp(8px, 2.5vw, 11px);
+        line-height: 1.35;
+        white-space: normal;
 
     }
+
+    /* Approval / affiliation */
 
     .header-info p 
     {
 
-        font-size: 10px;
+        font-size: clamp(8px, 2.5vw, 11px);
+        line-height: 1.35;
+        white-space: normal;
 
     }
-
 
     /* Grouped image */
 
     .header-photos 
     {
-
         position: relative;
-
         right: auto;
         top: auto;
-
         transform: none;
 
-        width: 250px;
+        width: min(250px, 80vw);
 
-        margin: 8px auto 0;
+        margin: 10px auto 0;
 
     }
 
     .header-photos img 
     {
 
-        width: 250px;
+        width: 100%;
         height: auto;
 
     }
+    
 }
 
 
@@ -607,5 +674,5 @@
         width: 210px;
 
     }
-    
+
 }
