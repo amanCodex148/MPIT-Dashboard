@@ -25,11 +25,12 @@
 
 </head>
 
-<body>
+<body oncontextmenu="return false;" onload="window.scrollTo(0,0)">
 
     <header>
 
-       <nav id="navBar">
+       <nav id="headBar">
+        
             <div class="header">
 
                 <div class="header-logo">
@@ -63,7 +64,7 @@
 
                 </div>
 
-                <div class="header-photos">
+                <div class="header-photos" id="groupedImg">
 
                     <img src="/assets/images/mahant-circle.png" alt="Institute Representatives">
 
@@ -83,6 +84,8 @@
         </nav>
 
     </header>
+
+    <script src="/js/navigation.js"></script>
     
 </body>
 
