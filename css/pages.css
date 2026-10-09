@@ -402,7 +402,7 @@ html, body {
                     LAPTOP / MEDIUM SCREENS
    ========================================================= */
 
-@media (max-width: 1199px) and (min-width: 801px) 
+@media (max-width: 1199px)
 {
 
     .header 
@@ -478,12 +478,55 @@ html, body {
 
 }
 
-
 /* =========================================================
-                            MOBILE
+                    MOBILE (max-width: 1080px)
    ========================================================= */
 
-@media (max-width: 800px) {
+@media (max-width: 1080px)
+
+{
+
+    #groupedImg
+    {
+
+        display: block;
+
+        right: -4.5%;
+
+        transform: translateY(-28%) scale(0.9);
+
+    }
+
+}
+
+/* =========================================================
+                    MOBILE (max-width: 920px)
+   ========================================================= */
+
+@media (max-width: 920px)
+
+{
+
+    #groupedImg
+    {
+
+        display: block;
+
+        right: -6.5%;
+
+        transform: translateY(-20%) scale(0.8);
+
+    }
+
+}
+
+
+/* =========================================================
+                    MOBILE (max-width: 800px)
+   ========================================================= */
+
+@media (max-width: 800px) 
+{
 
     .header 
     {
@@ -667,7 +710,7 @@ html, body {
 
 
 /* =========================================================
-                        VERY SMALL PHONES
+                VERY SMALL PHONES (max-width: 450px)
    ========================================================= */
 
 @media (max-width: 450px) 
